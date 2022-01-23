@@ -1,0 +1,173 @@
+html {
+  font-family: verdana, arial, helvetica;
+}
+
+img{
+  margin: 0 auto;
+}
+
+.image-section {
+  background-color: #ffffdd;
+}
+
+#cg-gtm-tal{
+  background-color: #ffffdd;
+  z-index: 1;
+}
+
+#tal {
+  z-index: 3;
+}
+
+.tal-div-img {
+  z-index: 2;
+}
+
+.link-button {
+  height: 18px;
+  background-color: #e7e7e7;
+  box-shadow: 1px 4px 4px 2px gray;
+  font-size: 16px;
+}
+
+#core {
+  font-size: 14px;
+}
+
+.cg-toggle {
+  right: 10px;
+  top: 2px;
+  outline: 0;
+}
+
+/* .header-stripe-bg{
+  background-image: url("../chessimages/highlight_stripes.gif");
+} */
+.cg-article {
+  background-color: #ffffdd;
+}
+
+.cg-article>header {
+  background-image: url("../chessimages/highlight_stripes.gif");
+}
+
+.cg-article h1, .cg-article h2 {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.cg-article h3 {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.cg-article p,
+.cg-article li {
+  font-size: 11px;
+}
+
+.cg-article li {
+  list-style: disc;
+  list-style-position: outside;
+  text-indent: -7px;
+}
+
+.header-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.article-link {
+  font-size: 13px;
+}
+
+.image-section>div {
+  background-image: url("../chessimages/highlight_stripes.gif");
+  min-height: 25px;
+}
+
+.more-events-div {
+  background-image: url("../chessimages/header_stripes.gif");
+  border: 1px solid #996633;
+}
+
+.more-events-link {
+  font-size: 13px;
+}
+
+#cg-new-events footer {
+  font-size: 11px;
+}
+
+#cg-chess-news li:nth-child(even) {
+  background-color: #FFDDAA;
+}
+
+#cg-chess-news li {
+  list-style: none;
+  text-indent: 0;
+}
+
+#cg-chess-news li cite::before {
+  content: "\02022";
+  color: #cc9966;
+}
+
+/* ADVANCED SEARCH */
+#cg-advanced-search fieldset:nth-child(odd) {
+  background-color: #ffcc99;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+#cg-middle-left h2,
+#cg-middle-right h2 {
+  color: #996633;
+  font-size: 14px;
+}
+
+#cg-whats-new li {
+  font-size: 14px;
+  list-style: none;
+}
+
+/* RECENT KIBITZING */
+#cg-recent-kibitzing li {
+  list-style: none;
+}
+
+/* RECENT VISITORS */
+#cg-recent-visitors footer {
+  color: #996633;
+}
+
+/* SPECIAL FEATURES */
+#cg-special-features li {
+  list-style: none;
+  text-indent: 0;
+}
+
+/* QUOTE OF THE DAY */
+#cg-qotd div header {
+  background-image: url("../chessimages/highlight_stripes.gif");
+}
+
+#cg-qotd div img {
+  width: 69px;
+  height: 26px;
+}
+
+#cg-qotd blockquote {
+  margin: 10px;
+}
+
+#cg-footer li {
+  font-size: 12px;
+  list-style: none;
+}
+
+#cg-footer p {
+  font-size: 12px;
+}

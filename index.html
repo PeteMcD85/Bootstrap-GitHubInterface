@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="./js/header.js"></script>
+</head>
+
+<body>
+  <!-- verdana,arial,helvetica -->
+  <header>
+
+    <div id="header-top" class="position-relative d-none d-sm-block d-flex justify-content-between w-100 align-items-center" style="background-image: url('./chessimages/header_stripes.gif')">
+      <!-- <button id="hamburger-menu-button" class="p-1 d-md-none">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button> -->
+      <div class="d-flex">
+
+        <a class="text-decoration-none w-100" href="/index.html" id="header-logo">
+          <img src="./chessimages/chessgameslogo.gif" alt="Chessgames.com Logo" class="w-m-100" />
+        </a>
+        <div id="header-link-buttons" class="d-md-flex">
+          <a class="link-button d-none d-md-block d-md-flex justify-content-center align-items-center border  rounded rounded-3 p-2 text-decoration-none text-dark me-1 " href="/index.html">Search
+          </a>
+          <a class="link-button d-none d-md-block d-md-flex justify-content-center align-items-center border  rounded rounded-3 p-2 text-decoration-none text-dark me-1" href="/perl/chessnew">Kibitz
+          </a>
+          <a class="link-button d-none d-md-block d-md-flex justify-content-center align-items-center border  rounded rounded-3 p-2 text-decoration-none text-dark me-1" href="perl\chessuser">Profile </a>
+          <a class="link-button d-none d-md-block d-md-flex justify-content-center align-items-center border  rounded rounded-3 p-2 text-decoration-none text-dark me-1" href="/chesshelp.html">Help
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="header-top-mobile" class="d-flex w-100 mb-2">
+      <img src="chessimages/mobile_header.gif" class="img-fluid vw-100 d-sm-none" alt="mobile-header">
+    </div>
+
+    <div class="desktop-mobile-view d-flex justify-content-around d-sm-none">
+      <button id="desktopVersion" name="button" class="btn btn-outline-primary btn-primary m-1" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Desktop View"><i
+          class="desktop-icon text-light bi bi-layout-three-columns"></i></button>
+    </div>
+
+
+    <nav id="header-nav" class="border border-dark w-100 position-relative mx-1">
+      <!--<b>&#183;</b> -->
+      <ul class="d-flex flex-wrap justify-content-center m-0">
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/chessmembers">Members</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/chessprofile.pl">Prefs</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/analyzer.pl">Laboratory</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/collections">Collections</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/explorer">Openings</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/chessending">Endgames</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/sacrifices">Sacrifices</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/history">History</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/searchkibitzes">Search Kibitzing</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/chessnew?chessforums=1">Chessforums</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/perl/tournaments">Tournament Index</a></li>
+        <li class="m-0 me-2"><a class="text-decoration-none me-3" href="/directory/">Players</a></li>
+        <li class="m-0 me-2">
+          <a class="text-decoration-none me-3" href="#kibitzing">
+            <img src="./chessimages/arrow_down.gif" alt="Down arrow" />
+            Kibitzing
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of header nav -->
+  </header>
+
+
+  <div id="core" class="container m-0 mw-100 g-1">
+    <div class="three-columns row d-flex g-1">
+      <div id="cg-center-column" class="my-2 col-12 col-sm-12 col-md-6 col-xl-8 order-md-2">
+
+        <div id="cg-welcome-mobile" class="cg-article d-sm-none text-center pb-1 border border-dark my-1 position-relative order-md-0"></div>
+
+        <section id="cg-search" class="cg-article text-start pb-1 border border-dark">
+          <header class="mb-1 w-100">
+            <h1 class="m-0 p-1 fw-bold">
+              SEARCH OVER
+              <!--begingamecount-->
+              951,000
+              <!--endgamecount-->
+              CHESS GAMES
+            </h1>
+          </header>
+          <div class="d-flex align-items-center justify-content-between row">
+            <form class="d-flex mobile-search m-2 col-10 col-sm-6" style="margin-bottom:0;" method=GET action="/perl/ezsearch.pl">
+              <input type="text" name="search">
+              <input type="submit" value="search">
+            </form>
+            <p class="d-flex m-0 mobile-search col-10 col-sm-5">
+              Search players and matches in plain language; e.g. "ANAND" or "FISCHER-SPASSKY&nbsp;'72"
+              <a class="d-flex text-decoration-none me-3" href="javascript:OpenWin('/ezsearch.html')">(more&nbsp;info)</a>
+            </p>
+          </div>
+        </section>
+        <!-- end of cg-search -->
+        <!-- ++++ FACEBOOK SSM +++++++ -->
+        <!-- <table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="100%">
+        <tr>
+        <td>
+        <table border="0" cellpadding="3" cellspacing="0" bgcolor="#FFFFEE" width="100%">
+        <tr>
+        <td align="left">  -->
+        <!-- <section id="cg-facebook">
+        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FChessgamescom%2F255848461282053&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=788344631197929" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:25px;" allowTransparency="true"></iframe><br> -->
+        <!-- <font face="verdana,arial,helvetica" size="-2"> -->
+        <!-- <p>
+          If you use Facebook, and like Chessgames, please give us a "like". It means a lot to us!
+        </p>
+      </section> -->
+        <!-- </font> -->
+        <!-- </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table> -->
+        <!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
+        <!--kibcount-->
+
+
+        <section id="cg-advanced-search" class="position-relative cg-article pb-1 border border-dark my-1">
+          <!-- <div class="d-flex"> -->
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold text-start">ADVANCED SEARCH</h2>
+          </header>
+          <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+          <!-- </div> -->
+          <div class="mobile-hide d-md-block">
+            <form class="text-start" method=GET action="/perl/chess.pl">
+              <fieldset class="border-0 row p-0 m-0 d-flex align-content-center" id="as-year">
+                <div class="col-4 d-flex align-items-center p-0">
+                  <strong>Year</strong>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center  d-flex align-items-center p-0">
+                  <select name="yearcomp">
+                    <option value="exactly"></option>
+                    <option value="exactly">= exactly</option>
+                    <option value="le">&lt;= no later than</option>
+                    <option value="ge">&gt;= at least</option>
+                  </select>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0">
+                  <input class="my-1" type="text" name="year" size="6">
+                  e.g.1905
+                </div>
+              </fieldset>
+              <fieldset class="border-0 row p-0 m-0" id="as-player">
+                <div class="col-4 d-flex align-items-center p-0">
+                  <strong>Player</strong>
+                  <select name="playercomp" class="h-50">
+                    <option value="either"></option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                  </select>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-content-center p-0 d-flex flex-column my-1">
+                  <select name="pid" class="w-75">
+                    <option value=""></option>
+                    <option value="10900">Adams</option>
+                    <option value="117280">Adhiban</option>
+                    <option value="14589">Adorjan</option>
+                    <option value="51148">Akobian</option>
+                    <option value="14125">Akopian</option>
+                    <option value="10240">Alekhine</option>
+                    <option value="17278">Aleksandrov, A G</option>
+                    <option value="117648">Alekseenko</option>
+                    <option value="68679">Alekseev</option>
+                  </select>
+                  <span class="d-flex">or <input type="text" name="player" size="20"></span>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0">
+                  <a class="text-decoration-none" href="/directory/">(Directory)</a>
+                </div>
+              </fieldset>
+              <fieldset class="border-0 row p-0 m-0" id="as-opposing-player">
+                <div class="col-4 d-flex flex-nowrap align-items-center p-0">
+                  <strong class="">Opposing player</strong>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-8 d-flex p-0 flex-column my-1">
+                  <select name="pid2" class="w-25">
+                    <option value=""></option>
+                    <option value="10900">Adams</option>
+                    <option value="117280">Adhiban</option>
+                    <option value="14589">Adorjan</option>
+                    <option value="51148">Akobian</option>
+                    <option value="14125">Akopian</option>
+                    <option value="10240">Alekhine</option>
+                  </select>
+                  <span class="d-flex"> or <input type="text" name="player2" size="20"></span>
+                </div>
+              </fieldset>
+              <fieldset class="border-0 row p-0 m-0" id="as-nom">
+                <div class="col-4 d-flex align-items-center p-0">
+                  <strong>Number of moves</strong>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0">
+                  <select name="movescomp">
+                    <option value="exactly"></option>
+                    <option value="le">&lt;= no more than</option>
+                    <option value="ge">&gt;= at least</option>
+                  </select>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0"><input class="my-1" type="text" name="moves" size="6"></div>
+              </fieldset>
+              <fieldset class="border-0 row p-0 m-0" id="as-opening">
+                <div class="col-4 d-flex align-items-center p-0">
+                  <strong>Opening</strong>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-8 d-flex align-items-center p-0">
+                  <select name="opening">
+                    <option value=""></option>
+                    <option value="">------- 1 e4</option>
+                    <option value=""></option>
+                    <option value="C20 C40 C44">King's Pawn Game</option>
+                    <option value="C23-C24">Bishop's Opening</option>
+                    <option value="C41">Philidor</option>
+                    <option value="C25-C29">Vienna</option>
+                    <option value="C45">Scotch</option>
+                    <option value="C55-C59">Two Knights</option>
+                    <option value="C46">Three Knights</option>
+                    <option value="C47-C49">Four Knights</option>
+                    <option value="B01">Scandinavian</option>
+                    <option value="C21-C22">Center Game</option>
+                    <option value="C50-C54">Giuoco Piano</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset class="border-0 row p-0 m-0" id="as-eco">
+                <div class="col-4 d-flex align-items-center p-0">
+                  <strong>ECO code</strong>
+                  <span class="p-1">is</span>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0"><a class="text-decoration-none" href="javascript:OpenWin('/chessecohelp.html')">(ECO help)</a>
+                </div>
+                <div class="col-5 col-sm-4 justify-content-center d-flex align-items-center p-0">
+                  <input class="my-1" type="text" size="9" name="eco">
+                </div>
+              </fieldset>
+              <fieldset class="border-0 p-0 m-0 d-flex justify-content-between d-flex align-content-center" id="as-result">
+                <div class="d-flex align-items-center">
+                  <strong class="">Result</strong>
+                  <span class="p-1 ">is</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <select name="result">
+                    <option value=""></option>
+                    <option value="1-0">White wins</option>
+                    <option value="0-1">Black wins</option>
+                    <option value="1st">1st player wins</option>
+                    <option value="2nd">1st player loses</option>
+                    <option value="1/2-1/2">draw</option>
+                    <option value="notdraw">not a draw</option>
+                  </select>
+                </div>
+              </fieldset>
+              <div id="as-checkboxes" class="d-flex mx-1 justify-content-end">
+                <label class="me-1">
+                  <input type=CHECKBOX name="kibitzing" value=1>
+                  with <a href="/chesshelp.html#kibitzing" class="text-decoration-none">kibitzing</a>
+                </label>
+                <label class="me-1">
+                  <input type=CHECKBOX name="annotated" value=1>
+                  with <a class="text-decoration-none" href="/chesshelp.html#annotation">annotation</a>
+                </label>
+              </div>
+              <!-- SSMSSM FORMFOOTER?-->
+              <div id="as-buttons" class="d-flex mx-1 justify-content-between">
+                <input type=RESET value=" Clear Form ">
+                <input type="submit" value=" Find Chess Games! ">
+              </div>
+            </form>
+          </div>
+          <!-- end of div for form -->
+        </section>
+        <!-- end of cg-advanced-search -->
+
+
+
+        <section id="cg-puzzleotd" class="cg-article position-relative text-center pb-1 border border-dark my-1">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">White to play</h2>
+          </header>
+          <a class="text-decoration-none" href="/perl/chessgame?gid=1411113&m=18">M Bonch-Osmolovsky vs B Baranov</a>
+          <br>
+          <a class="text-decoration-none" href="/perl/chessgame?gid=1411113&m=18">
+            <img src="./chessimages/puzzle.png" alt="temp img SSM">
+          </a>
+          <br>
+          <b>18.?</b>
+          <br>
+          See game for solution.
+          <br>
+          <img src="./chessimages/difficulty4.gif" width="284" height="25" alt="Difficulty Scale - Medium">
+
+          <p><a class="text-decoration-none" href="/aboutpuzzles.html">about our puzzles</a></p>
+        </section>
+        <main class="d-lg-flex p-1">
+          <!-- ++++++++++ LEFT COLUMN UNDER Puzzle of the Day SSM ++++++++++++++++++-->
+          <div id="cg-middle-left" class="border-end border-dark pe-1">
+            <section class="position-relative">
+              <h2 class="fw-bold m-2 p-2">NEW USERS: Getting Started</h2>
+              <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+              <div class="mobile-hide d-md-block">
+                <p>
+                  Founded on an extensive database of historical chess games combined with discussion forums,
+                  <strong>Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to participate.</strong>
+                  From novices to grandmasters, <em>all</em> members can learn from those who are stronger players, while guiding those who are less experienced.
+                </p>
+                <p>
+                  <a class=" text-decoration-none" href="/perl/chessprofile.pl">Register now</a>. It's quick, free, and anonymous.
+                  This will allow you to "kibitz" in our discussion forums, make game collections, and use other powerful features.
+                </p>
+                <p>
+                  To search our chess database, fill out one or more fields on the form
+                  above, and click <em>Find Chess Games!</em>
+                </p>
+                <p>
+                  Please take a few minutes to read the <a class="text-decoration-none" href="/chesshelp.html">Help Page</a>.
+                </p>
+                <p>
+              </div>
+            </section>
+            <section id="cg-whats-new" class="position-relative">
+              <!-- <font face="verdana,arial,helvetica" size="-1"><b><font color="#996633"> -->
+              <h2 class="m-2 fw-bold p-2 p-1">What's New</h2>
+              <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+              <ul class="mobile-hide d-md-block p-0">
+                <li class="my-2"><b>&#183; </b>Chessgames is proud to provide online resources for the Sri Lanka Olympiad Chess Team.</li>
+                <li class="my-2"><b>&#183; </b>On December 10th, 2019, Chessgames turned 18 years old!</li>
+                <li class="my-2"><b>&#183; </b>The 2nd Chessgames
+                  <a class="text-decoration-none" href="/perl/challenge?gid=1890602">Thematic Challenge</a>
+                  lets members play each other by voting on moves. The game has turned into some sort of Traxler-Defense / Evans Gambit hybrid.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+                  Our new <a class="text-decoration-none" href="/perl/analyzer.pl">Analysis Laboratory</a> is a playground of computer engine tools.
+                  Evaluate any position, variation, or entire game with our super-strong Stockfish&trade; dedicated server.
+                  (<a class="text-decoration-none" href="/perl/tour">Premium members</a> only.)
+                </li>
+                <li class="my-2"><b>&#183; </b>We have a new chess viewer! Just select "Olga Viewer" from the pulldown menu under any game,
+                  and leave your feedback <a class="text-decoration-none" href="/~Olga+Viewer">here</a>.</li>
+                <li class="my-2"><b>&#183; </b>Our <a class="text-decoration-none" href="/perl/explorer">Opening Explorer</a> now has a button
+                  to reveal analysis by the Stockfish&trade; chess engine for all major positions.</li>
+                <li class="my-2"><b>&#183; </b>Wondering when Kasparov last played, or need to find today's game by your favorite GM?
+                  Our new "Recent Games" column now found on player pages is a shortcut to the games they played last.</li>
+                <li class="my-2"><b>&#183; </b>The new <a class="text-decoration-none" href="/perl/goat.pl">Notable Games of All Time</a> feature shows our members' picks
+                  for the best chess games across years, decades, and centuries!</li>
+                <li class="my-2"><b>&#183; </b><a class="text-decoration-none" href="/~ChessBookForum">The Chess Book Forum</a> is a member-moderated area
+                  for the discussion, research, and reviews of chess books.</li>
+                <li class="my-2"><b>&#183; </b>Our <em>Similar Games</em> link found on any game page is now greatly improved.</li>
+
+                <li class="my-2"><b>&#183; </b>Our <i>Similar Games</i> link found on any game page is now greatly improved.</li>
+
+                <li class="my-2"><b>&#183; </b>
+
+                  Our revolutionary chess training tool, <a class="text-decoration-none" href="/perl/guessthemove">Guess-the-Move</a>, now has over
+                  14,000 games to choose from! If you haven't tried it, check out our <a class="text-decoration-none" href="/perl/quiz?gid=1139713">free sample game
+                    Tal-Lutikov</a>; it's almost like playing a grandmaster!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  After 6 months and 36 moves, The World Team defeated GM Arkadij Naiditsch at the
+                  Chessgames Challenge! See the game <a class="text-decoration-none" href="/perl/chessgame?gid=1756777">here</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  <a class="text-decoration-none" href="/perl/chessmembers">Premium Members</a> can now search on <i>Event</i> (the most recent
+                  100 major chess events) or on <i>Endgame Type</i> (pawn ending, rook ending, etc.) from the Advanced Search above.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  We've upgraded our <i>pgn4web</i> chess viewer to the <a class="text-decoration-none" href="/pgn4webhelp.html">newest version</a>.
+                  You can see the FEN for any game position by clicking on the b8 square, and you can flip the board by clicking on
+                  the e7 square. Best of all, you can get position analysis by clicking on e8!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our <a class="text-decoration-none" href="/perl/tournaments">Tournament Index</a> now includes a handy text search,
+                  so you can look up tournaments involving <a class="text-decoration-none" href="/perl/tournaments?query=Lasker">Lasker</a>, events from
+                  <a class="text-decoration-none" href="/perl/tournaments?query=2004">2004</a>, <a class="text-decoration-none" href="/perl/tournaments?query=Tal+Memorial">Tal Memorial</a>,
+                  tournaments in <a class="text-decoration-none" href="/perl/tournaments?query=Berlin">Berlin</a>, etc.
+                  Give it a try!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  The Chessgames Challenge <a class="text-decoration-none" href="/perl/chessgame?gid=1730046">Simon Williams vs The World</a>
+                  is now over after GM Williams resigned after the winning shot 33...Be3!! Congratulations to all who
+                  participated in this game and many thanks to GM Williams for being such a lively and creative adversary.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  We now have over 21,000 <a class="text-decoration-none" href="/perl/collections">Game Collections</a>
+                  compiled by our members.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Chessgames member "Once" has published a collection of his stories related to our Puzzles of the Day,
+                  titled <i>Once Upon a Chess Game</i> and now <a class="text-decoration-none"
+                    href="http://www.amazon.com/Once-Upon-Chess-Game-Will-ebook/dp/B00G13XCVY/ref=sr_1_1?ie=UTF8&qid=1382253273&sr=8-1&keywords=once+upon+a+chess+game">available
+                    on Amazon</a> in Kindle format.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  You can now pay for Chessgames premium membership with our new <a class="text-decoration-none" href="/perl/chessgames_membership_paypal.pl">PayPal&reg; Checkout Page</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  GM Simon Williams has accepted the <a class="text-decoration-none" href="/perl/challenge?gid=1730046">Chessgames Challenge</a>!
+                  Sign up for the game today and join the massive World Team and attempt to take down a grandmaster!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  <a class="text-decoration-none" href="/perl/chessgame?gid=1672567">The World vs GM Akobian</a> is over; Akobian
+                  resigned on move 35. Congratulations to the 1400+ people on the Chessgames World Team
+                  for defeating one of the USA's strongest grandmasters!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our <a class="text-decoration-none" href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an
+                  account for another Chessgames member.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our <a class="text-decoration-none" href="/perl/newtournaments">New Tournaments Page</a> now displays the latest chess events added
+                  by our staff, plus historical tournaments being organized by members. This allows us to have kibiziting on
+                  famous historical events such as <a class="text-decoration-none" href="/perl/chess.pl?tid=79221">Hastings (1895)</a> and <a class="text-decoration-none" href="/perl/chess.pl?tid=79229">AVRO (1938)</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  By popular vote of Chessgames members, the <i>Thematic Challenge</i> was
+                  the Albin Countergambit (1.d4 d5 2.c4 e5). After 40 moves, the game was drawn. You can see the game here:
+                  <a class="text-decoration-none" href="/perl/chessgame?gid=1665074">Team White vs Team Black (2012)</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Kasparov's latest chess book, <a class="text-decoration-none" href="http://store.chessgames.com/garry-kasparov-on-garry-kasparov-part-1-1973-1985-hardcover.html">Garry Kasparov on
+                    Garry Kasparov: Part I</a>, is now available at the <a class="text-decoration-none" href="http://store.chessgames.com/">Chessgames Store</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Thanks to everybody for joining us during the Anand-Gelfand World Chess Championship,
+                  and special thanks to our very special guests, <a class="text-decoration-none" href="/perl/chessplayer?pid=54808">WGM Natalia Pogonina</a>
+                  and <a class="text-decoration-none" href="/perl/chessplayer?pid=61575">WGM Jennifer Shahade</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our <a class="text-decoration-none" href="/perl/chesslive">Live Broadcast Page</a> now has special enhancements for mobile devices such as
+                  Androids and iPhones.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Be sure to check out the new <a class="text-decoration-none" href="http://store.chessgames.com/">Chessgames Store</a>, a veritable
+                  chess supermarket complete with sets, boards, clocks, books, DVDs--anything your chess-loving heart can imagine!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  <i>Chessgames Challenge VII is over!</i> <a class="text-decoration-none" href="http://store.chessgames.com/SSSSSMMMMMM">The
+                    Chessgames Challenge</a> pits world-class grandmasters against teams of thousands of chess fans. The gauntlet was laid
+                  down, and GM Varuzhan Akobian was brave enough to accept the challenge. After 32 moves the Chessgames team
+                  managed to draw this world-class grandmaster. Congratulations!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  USCF members, be sure to check out the article about Chessgames and the Chessgames Challenge,
+                  <a class="text-decoration-none" href="/chess_life_aug_2011.pdf">Brave New World: Human Intuition and Computer-assisted Chess</a>,
+                  in the August 2011 issue of <i>Chess Life.</i>
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Have a question about chess history? Spot an error on a player biography? Want to exchange stories with
+                  other chess history buffs? Check out the new <a class="text-decoration-none" href="/perl/bistro.pl">Biographer Bistro</a>.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  The <a class="text-decoration-none" href="/perl/challenge?gid=1589895">World vs Natalia Pogonina</a> game is over; after 62 moves it was
+                  drawn. Congratulations to both GM Pogonina and the World Team for their fine performances.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our new <i>Hot Games</i> feature shows you what games people have been interested in lately. The list appears to the right, below "Example Searches."
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Show off your love for chess with our beautiful high-quality garments available exclusively from
+                  <a class="text-decoration-none" href="/perl/store">the Chessgames Store</a>!
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our <a class="text-decoration-none" href="/perl/submitpun">Pun Submission Page</a> is back online,
+                  along with our <a class="text-decoration-none" href="/perl/punjudge">Pun Voting Booth</a>.
+                  Note that this is now a permanent site feature and no longer a contest.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  The new "<a class="text-decoration-none" href="/perl/myfavorites">My Favorites</a>" feature allows you to track
+                  your favorite Chessgames members.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  <a class="text-decoration-none" href="/perl/chessgift?name=rinus">The Rinus Scholarship</a> gives free premium Chessgames memberships
+                  to people who contribute their efforts to the Chessgames Challenge, and all proceeds are placed in a special fund
+                  designated to hire grandmasters for upcoming Chessgames Challenges. If you are able, consider <a class="text-decoration-none" href="/perl/chessgift?name=rinus">making a donation</a> and help support chess learning worldwide.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  We now have completed our <a class="text-decoration-none" href="/wcc.html">History of the World Chess Championship</a>,
+                  a historical overview of the most coveted title in chess.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  We now have new powerful hardware to better serve our members. Thanks
+                  to all of the <a class="text-decoration-none" href="/perl/chessmembers">premium members</a> who made this
+                  upgrade possible.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Our new <a class="text-decoration-none" href="/perl/collections">Game Collections Page</a> allows you
+                  to search for game collections by keyword.
+                </li>
+                <li class="my-2"><b>&#183; </b>
+
+                  Each day, you can sample the powerful Repertoire Explorer for free!
+                  Just click on the Player of the Day, and follow the links by the magnifying glass
+                  to fully explore his or her openings. For
+                  more information on premium membership, please see our <a class="text-decoration-none" href="/perl/chessmembers">Premium Membership Page</a>.
+                </li>
+              </ul>
+            </section>
+          </div>
+          <!-- Google+ code removed, because Google+ is obsolete as of 2019-04-01 -->
+          <!-- narrow column on the right side of the wide central column SSM -->
+          <div id="cg-middle-right" class="ps-1">
+            <section class="position-relative">
+              <h2 class="m-2 fw-bold p-2">Register Today!</h2>
+              <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+              <p class="mobile-hide d-md-block">Go to our <a class="text-decoration-none" href="/perl/chessprofile.pl">registration page</a>
+                and get a free account today: you'll be able to make posts ("kibitzing"),
+                start game collections, participate in our regular contests, and so much more!</p>
+              <!-- beginprediction
+          <font face="Georgia,Palatino,Times,Times New Roman">
+          =endprediction -->
+            </section>
+            <section class="position-relative">
+              <h2 class="m-2 fw-bold p-2">Hot Games</h2>
+              <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+              <ol class="mobile-hide d-md-block">
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1331436">H Westerinen vs Savon,&nbsp;1975 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1946897">P Hair vs S Yee,&nbsp;2017 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1121172">Schlechter vs Tarrasch,&nbsp;1911 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1054749">Schlechter vs Gunsberg,&nbsp;1901 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1067294">Kasparov vs Karpov,&nbsp;1990 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1998278">Luis Supi vs Carlsen,&nbsp;2020 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1076631">Hartston vs Spassky,&nbsp;1965 0-1</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1595490">E Kemeny vs E Shrader,&nbsp;1904 1-0</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1983056">H Westerinen vs Lombardy,&nbsp;1961 0-1</a></li>
+                <li><a class="text-decoration-none" href="/perl/chessgame?gid=1503959">Mamedyarov vs Carlsen,&nbsp;2008 0-1</a></li>
+              </ol>
+            </section>
+            <!--begintallbanner1-->
+            <!-- AD SSM -->
+            <!-- <script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/uae/120x600.js"></script> -->
+            <!--endtallbanner1-->
+            <section class="position-relative">
+              <h2 class="m-2 fw-bold p-2">Example Searches</h2>
+              <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+              <ul class="mobile-hide d-md-block">
+                <li><a class="text-decoration-none" href="/perl/chess.pl?opening=E01-E09&kibitzing=1">Chewing the fat about the Catalan</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=52948&kibitzing=1">Carlsen Chatter</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?annotatedby=85240">Heisman's Handbook</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?annotatedby=10626">Reti's Ruminations</a></li>
+                <li><a class="text-decoration-none" href="/player/marcel_duchamp.html">Marcel Duchamp: painter, chess player</a></li>
+                <li><a class="text-decoration-none" href="/player/tal_shaked.html">American chess prodigy Tal Shaked</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=10342&pid2=16002">Morphy vs Anderssen</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=16521&pid2=11207&year=1951">Bronstein vs Botvinnik, 1951</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?playercomp=black&pid=10510&opening=D32-D34">Tarrasch plays the Tarrasch Defense</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=10240&opening=B02-B05">Alekhine plays the Alekhine</a></li>
+                <li><a class="text-decoration-none" href="/perl/ezsearch.pl?search=Reti+vs+Spielmann">Great Match-Ups: Reti vs Spielmann</a></li>
+                <li><a class="text-decoration-none" href="/perl/ezsearch.pl?search=Alekhine+vs+Bogolubov">Great Match-Ups: Alekhine vs Bogolubov</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=19252&playercomp=black&eco=B28&title=O'Kelly+plays+the+O'Kelly+Sicilian">Alberic O'Kelly plays the O'Kelly Sicilian</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?pid=42463&eco=D02">Vladimir Kovacevic demonstrates offbeat Queen's pawn openings</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?movescomp=le&moves=10&result=1/2-1/2">Grandmaster draws (10 moves and less)</a></li>
+                <li><a class="text-decoration-none" href="/perl/chess.pl?opening=B34-B39+B70-B79&movescomp=le&moves=18&result=1-0">How not to play the Sicilian Dragon</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1000473">Game Collection: Endgame Tactics</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1001096">Game Collection: Picturesque Positions</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1000120">&quot;100 Select Games&quot; by Botvinnik</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1003068">&quot;Uncompromising Chess&quot; by Alexander Belyavsky</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1004174">&quot;Masters of the Chessboard&quot; by Richard Reti</a></li>
+                <li><a class="text-decoration-none" href="/perl/chesscollection?cid=1004415">&quot;Dreihundert Schachpartien&quot; by Tarrasch</a></li>
+                <li><a class="text-decoration-none" href="/~ChessBookForum">The Chess Book Forum</a></li>
+              </ul>
+            </section>
+          </div>
+          <!-- end of cg-middle-right -->
+        </main>
+        <!-- end of main -->
+      </div>
+      <!-- end of cg-center-column -->
+
+
+      <!--++++++++++++ LEFT COLUMN SSM +++++++++++++-->
+      <div id="cg-left-column" class="col-12 col-sm-6 col-md-3 col-xl-2 order-md-1">
+        <!-- GAME OF THE DAY SSM -->
+        <article id="cg-gotd" class="cg-article text-center pb-1 border border-dark my-1">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold"><a class="text-decoration-none header-link text-dark" href="/perl/gamesoftheday">Game of the Day</a></h2>
+            <!--begintoday-->
+            <h3 class="m-0 fw-normal">Thursday, July 16</h3>
+            <!--endtoday-->
+          </header>
+          <div>
+            <p class="m-0 fw-bold">
+              <a class="text-decoration-none" href="/perl/chessgame?gid=1530711">
+                Eigil Pedersen
+                <br>
+                vs
+                <br>
+                G F Kane
+              </a>
+              <br>
+              Which Came First: the G Kane or the Eig?
+              <br>
+              (by MissScarlett)
+            </p>
+          </div>
+        </article>
+        <!-- PLAYER OF THE DAY SSM -->
+        <article id="cg-playerotd" class="cg-article text-center pb-1 border border-dark my-1">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold "><a class="text-decoration-none article-link d-block fw-bold text-dark" href="/directory/">Player of the Day</a></h2>
+          </header>
+          <div>
+            <p class="m-0">
+              <a class="text-decoration-none d-block fw-bold" href="/perl/chessplayer?pid=42522 article-link">
+                Ashot Gamletovich Anastasian
+              </a>
+              (1964-2016)
+            </p>
+          </div>
+        </article>
+        <!-- OPEN OF THE DAY SSM -->
+        <article id="cg-ootd" class="cg-article text-center pb-1 border border-dark my-1">
+          <header class="mb-1 w-100 ">
+            <h2 class="m-0 p-1  fw-bold"> <a class="text-decoration-none text-dark" href="/perl/explorer header-link">Opening of the Day</a></h2>
+          </header>
+          <div>
+            <a class="article-link d-block fw-bold" href="https://www.chessgames.com/perl/moves.pl?moves=e4.c5.Nf3.Nc6.Bb5.g6">
+              Sicilian, Rossolimo Variation
+            </a>
+            <p class="m-0">
+              1.&nbsp;e4&nbsp;c5 2.&nbsp;&#9816;f3&nbsp;&#9816;c6 3.&nbsp;&#9815;b5&nbsp;g6
+            </p>
+          </div>
+        </article>
+        <div id="cg-gtm-tal" class="image-section header-stripe-bg border border-dark text-center position-relative">
+          <div class="mb-1 tal-div-img w-100 position-absolute top-0 "></div>
+          <a class="text-decoration-none" href="/perl/quiz?gid=1139502">
+            <img id="tal" class="p-2" src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?">
+          </a>
+        </div>
+        <!-- NEW Events SSM -->
+
+        <section id="cg-new-events" class="cg-article text-center pb-1 border border-dark my-1 position-relative">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">New Events</h2>
+          </header>
+          <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+          <div class="mobile-hide d-md-block">
+            <div class="more-events-div w-75 my-1 mx-auto p-1">
+              <a class="text-decoration-none more-events-link fw-bold" href="/perl/newtournaments">
+                more events...
+              </a>
+            </div>
+            <!-- POSSIBLY ONE <h3> INSTEAD OF THREE <h3>'s - SSM -->
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Leon Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> July 10-12 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=49080">Dominguez</a>,
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=151393">Maghsoodloo</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=15809">Shirov</a>, and <a class="text-decoration-none"
+                  href="/perl/chessplayer?pid=113371">Santos</a> are playing in the online rapid version of the 33rd "Ciudad de Leon" Masters
+                tournament.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Tournament&nbsp;Page</a> -
+                <a class="text-decoration-none" href="https://www.chess.com/article/view/leon-chess-festival-2020#magistral">
+                  Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">MC Tour: Chessable Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> June 20 - July 5 2020</h3>
+              </header>
+              <p>
+                World Champion <a class="text-decoration-none" href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> eliminated <a class="text-decoration-none" href="/perl/chessplayer?pid=107252">Anish Giri</a> in the final to win the 3rd Rapid event
+                in
+                the $1 million Magnus Carlsen Chess Tour. The 12-player
+                $150,000 tournament featured the world's top six players, eight of the Top 10, six of the Candidates (plus Teimour Radjabov), the Lindores Abbey Rapid Challenge finalists Hikaru Nakamura and Daniil Dubov, and Tour debutants
+                Harikrishna
+                and Vladislav Artemiev.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">Tournament&nbsp;Page</a> - <a class="text-decoration-none" href="https://explore.chess24.com/tour/">Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">World Stars Sharjah Online International</a></h3>
+                <h3 class="text-start"> ICC INT</h3>
+                <h3 class="text-start"> June 12-13 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=50065">Shakhriyar Mamedyarov</a> won this 6-player rapid double round robin with Harikrishna, Wojtaszek, Kasimdzhanov, Salem Saleh, and Amin Bassem.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">Tournament Page</a> - <a class="text-decoration-none"
+                  href="https://www.chessclub.com/article/world-stars-sharjah-online-international-chess-championship-2020">Official&nbsp;Site</a><br>
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Leon Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> July 10-12 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=49080">Dominguez</a>,
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=151393">Maghsoodloo</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=15809">Shirov</a>, and <a class="text-decoration-none"
+                  href="/perl/chessplayer?pid=113371">Santos</a> are playing in the online rapid version of the 33rd "Ciudad de Leon" Masters
+                tournament.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Tournament&nbsp;Page</a> -
+                <a class="text-decoration-none" href="https://www.chess.com/article/view/leon-chess-festival-2020#magistral">
+                  Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">MC Tour: Chessable Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> June 20 - July 5 2020</h3>
+              </header>
+              <p>
+                World Champion <a class="text-decoration-none" href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> eliminated <a class="text-decoration-none" href="/perl/chessplayer?pid=107252">Anish Giri</a> in the final to win the 3rd Rapid event
+                in
+                the $1 million Magnus Carlsen Chess Tour. The 12-player
+                $150,000 tournament featured the world's top six players, eight of the Top 10, six of the Candidates (plus Teimour Radjabov), the Lindores Abbey Rapid Challenge finalists Hikaru Nakamura and Daniil Dubov, and Tour debutants
+                Harikrishna
+                and Vladislav Artemiev.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">Tournament&nbsp;Page</a> - <a class="text-decoration-none" href="https://explore.chess24.com/tour/">Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">World Stars Sharjah Online International</a></h3>
+                <h3 class="text-start"> ICC INT</h3>
+                <h3 class="text-start"> June 12-13 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=50065">Shakhriyar Mamedyarov</a> won this 6-player rapid double round robin with Harikrishna, Wojtaszek, Kasimdzhanov, Salem Saleh, and Amin Bassem.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">Tournament Page</a> - <a class="text-decoration-none"
+                  href="https://www.chessclub.com/article/world-stars-sharjah-online-international-chess-championship-2020">Official&nbsp;Site</a><br>
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Leon Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> July 10-12 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=49080">Dominguez</a>,
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=151393">Maghsoodloo</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=15809">Shirov</a>, and <a class="text-decoration-none"
+                  href="/perl/chessplayer?pid=113371">Santos</a> are playing in the online rapid version of the 33rd "Ciudad de Leon" Masters
+                tournament.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Tournament&nbsp;Page</a> -
+                <a class="text-decoration-none" href="https://www.chess.com/article/view/leon-chess-festival-2020#magistral">
+                  Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">MC Tour: Chessable Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> June 20 - July 5 2020</h3>
+              </header>
+              <p>
+                World Champion <a class="text-decoration-none" href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> eliminated <a class="text-decoration-none" href="/perl/chessplayer?pid=107252">Anish Giri</a> in the final to win the 3rd Rapid event
+                in
+                the $1 million Magnus Carlsen Chess Tour. The 12-player
+                $150,000 tournament featured the world's top six players, eight of the Top 10, six of the Candidates (plus Teimour Radjabov), the Lindores Abbey Rapid Challenge finalists Hikaru Nakamura and Daniil Dubov, and Tour debutants
+                Harikrishna
+                and Vladislav Artemiev.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">Tournament&nbsp;Page</a> - <a class="text-decoration-none" href="https://explore.chess24.com/tour/">Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">World Stars Sharjah Online International</a></h3>
+                <h3 class="text-start"> ICC INT</h3>
+                <h3 class="text-start"> June 12-13 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=50065">Shakhriyar Mamedyarov</a> won this 6-player rapid double round robin with Harikrishna, Wojtaszek, Kasimdzhanov, Salem Saleh, and Amin Bassem.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">Tournament Page</a> - <a class="text-decoration-none"
+                  href="https://www.chessclub.com/article/world-stars-sharjah-online-international-chess-championship-2020">Official&nbsp;Site</a><br>
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Leon Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> July 10-12 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=49080">Dominguez</a>,
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=151393">Maghsoodloo</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=15809">Shirov</a>, and <a class="text-decoration-none"
+                  href="/perl/chessplayer?pid=113371">Santos</a> are playing in the online rapid version of the 33rd "Ciudad de Leon" Masters
+                tournament.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99496">Tournament&nbsp;Page</a> -
+                <a class="text-decoration-none" href="https://www.chess.com/article/view/leon-chess-festival-2020#magistral">
+                  Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">MC Tour: Chessable Masters</a></h3>
+                <h3 class="text-start"> chess24.com INT</h3>
+                <h3 class="text-start"> June 20 - July 5 2020</h3>
+              </header>
+              <p>
+                World Champion <a class="text-decoration-none" href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> eliminated <a class="text-decoration-none" href="/perl/chessplayer?pid=107252">Anish Giri</a> in the final to win the 3rd Rapid event
+                in
+                the $1 million Magnus Carlsen Chess Tour. The 12-player
+                $150,000 tournament featured the world's top six players, eight of the Top 10, six of the Candidates (plus Teimour Radjabov), the Lindores Abbey Rapid Challenge finalists Hikaru Nakamura and Daniil Dubov, and Tour debutants
+                Harikrishna
+                and Vladislav Artemiev.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99340">Tournament&nbsp;Page</a> - <a class="text-decoration-none" href="https://explore.chess24.com/tour/">Official&nbsp;Site</a>
+
+              </footer>
+            </section>
+            <section class="position-relative text-start m-1">
+              <header>
+                <h3 class="text-start"> <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">World Stars Sharjah Online International</a></h3>
+                <h3 class="text-start"> ICC INT</h3>
+                <h3 class="text-start"> June 12-13 2020</h3>
+              </header>
+              <p>
+                <a class="text-decoration-none" href="/perl/chessplayer?pid=50065">Shakhriyar Mamedyarov</a> won this 6-player rapid double round robin with Harikrishna, Wojtaszek, Kasimdzhanov, Salem Saleh, and Amin Bassem.
+              </p>
+              <footer class="m-0">
+                <a class="text-decoration-none" href="/perl/chess.pl?tid=99329">Tournament Page</a> - <a class="text-decoration-none"
+                  href="https://www.chessclub.com/article/world-stars-sharjah-online-international-chess-championship-2020">Official&nbsp;Site</a><br>
+              </footer>
+            </section>
+            <div class="more-events-div w-75 my-1 mx-auto p-1">
+              <a class="more-events-link fw-bold" href="/perl/newtournaments">
+                more events...</a>
+            </div>
+          </div>
+
+
+
+        </section>
+        <!-- COMMENT OUT FOR NOW(SAME STRUCTURE AS ABOVE) SSM -->
+        <!-- <a href="/perl/chess.pl?tid=99323">MrDodgy Invitational</a><br>
+        chess24.com INT<br>
+        June 12-14 2020<br>
+        <font size="-2"><a href="/perl/chessplayer?pid=107252">Anish Giri</a> prevailed over <a href="/perl/chessplayer?pid=49665">David Navara</a> to win this 8-player blitz knockout tournament, also featuring Svidler, Korobov, Howell, Grandelius, Fressinet and Nielsen.<br><a href="/perl/chess.pl?tid=99323">Tournament Page</a> - <a href="https://chess24.com/en/watch/live-tournaments/mrdodgy-invitational-2020">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99313">Clutch International</a><br>
+        lichess.org INT<br>
+        June 6-14 2020<br>
+        <font size="-2">The second Cluch Chess rapid knockout event organized by the St. Louis Chess Club featured a top-level international lineup of 8 players. <a href="/perl/chessplayer?pid=52948">Carlsen</a> won the event, defeating <a href="/perl/chessplayer?pid=76172">Caruana</a> in closely contested finals.<br><a href="/perl/chess.pl?tid=99313">Tournament Page</a> - <a href="https://www.uschesschamps.com/2020-clutch-chess-international/overview">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99199">Clutch Champions Showdown</a><br>
+        lichess.org INT<br>
+        May 26-29 2020<br>
+        <font size="-2"><a href="/perl/chessplayer?pid=95915">Wesley So</a> defeated <a href="/perl/chessplayer?pid=76172">Fabiano Caruana</a> in the finals to win this online rapid event organized by the St. Louis Chess Club, that debuted a special scoring system developed by Maurice Ashley. <br><a href="/perl/chess.pl?tid=99199">Tournament Page</a> - <a href="https://uschesschamps.com/2020-clutch-chess/overview">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99111">MC Tour: Lindores Abbey Rapid Challenge</a><br>
+        chess24.com INT<br>
+        May 19 - June 3 2020<br>
+        <font size="-2"><a href="/perl/chessplayer?pid=113399">Daniil Dubov</a> triumphed over <a href="/perl/chessplayer?pid=10084">Hikaru Nakamura</a> (who eliminated <a href="/perl/chessplayer?pid=52948">Magnus Carlsen</a>) in the final Armageddon game, to win this online Rapid event played on the chess24 Playzone.<br><a href="/perl/chess.pl?tid=99111">Tournament Page</a> - <a href="https://chess24.com/en/read/news/the-1m-magnus-carlsen-tour-a-new-era-for-chess">Official Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99110">Chessbrah Invitational</a><br>
+        Chess.com INT<br>
+        May 15-16 2020<br>
+        <font size="-2"><a href="/perl/chessplayer?pid=152702">Alireza Firouzja</a> won the 6 player Double Elimination Knockout format blitz event, beating <a href="/perl/chessplayer?pid=56798">Vachier-Lagrave</a> in the first round, <a href="/perl/chessplayer?pid=17279">Alexander Grischuk</a> (who was playing in the <a href="/perl/chess.pl?tid=99060">Steinitz Memorial</a> in parallel) in the second round and <a href="/perl/chessplayer?pid=107252">Giri</a> in the final.<br><a href="/perl/chess.pl?tid=99110">Tournament Page</a> - <a href="https://www.chess.com/news/view/firouzja-wins-chessbrah-invitational">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99060">FIDE Online Steinitz Memorial</a><br>
+        chess24.com INT<br>
+        May 15-17 2020<br>
+        <font size="-2">The two 10-player blitz double round-robins were won by top seeds <a href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> in the Open section, and <a href="/perl/chessplayer?pid=50277">Kateryna Lagno</a> in the Women's section.<br>Tournament&nbsp;Pages:<br><a href="/perl/chess.pl?tid=99060">Open</a> - <a href="/perl/chess.pl?tid=99061">Women</a> - <a href="https://chess24.com/en/watch/live-tournaments/fide-online-steinitz-memorial-2020/" target="_blank">Official&nbsp;Site</a> <br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=99025">FIDE Chess.com Online Nations Cup</a><br>
+        Chess.com INT<br>
+        May 5-10 2020<br>
+        <font size="-2">The Chinese team won this online rapid team competition with many of the world's strongest players, held on Chess.com, while the USA team placed second, against Russia, Europe, India, and a "Rest of the World" team.<br><a href="/perl/chess.pl?tid=99025">Tournament Page</a> - <a href="https://www.chess.com/article/view/fide-chess-com-online-nations-cup">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=98883">Magnus Carlsen Invitational</a><br>
+        chess24.com INT<br>
+        Apr 18 - May 3 2020<br>
+        <font size="-2">World Champion <a href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> defeated <a href="/perl/chessplayer?pid=10084">Hikaru Nakamura</a> in the final stage to win this online Rapid event, featuring 6 more of the world's best players (<a href="/perl/chessplayer?pid=76172">Caruana</a>, <a href="/perl/chessplayer?pid=52629">Ding</a>, <a href="/perl/chessplayer?pid=54683">Nepomniachtchi</a>, <a href="/perl/chessplayer?pid=56798">Vachier-Lagrave</a>, <a href="/perl/chessplayer?pid=107252">Giri</a>,  and <a href="/perl/chessplayer?pid=152702">Firouzja</a>) on the chess24 Playzone.<br><a href="/perl/chess.pl?tid=98883">Tournament Page</a> - <a href="https://www.magnuscarlsen.com/en/invitational">Official&nbsp;Site</a><br></font>
+        &nbsp;<br>
+
+        <a href="/perl/chess.pl?tid=98742">World Championship Candidates</a><br>
+        Yekaterinburg RUS<br>
+        Mar 17 - Apr 3 2020<br>
+        <font size="-2">The 8-player contest for the right to challenge <a href="/perl/chessplayer?pid=52948">Magnus Carlsen</a> for the World Championship title, led by <a href="/perl/chessplayer?pid=56798">Vachier-Lagrave</a> and <a href="/perl/chessplayer?pid=54683">Nepomniachtchi</a> after 7 rounds, has been suspended by FIDE to allow the players to return to their countries before Russia shuts down air traffic. To be resumed at a later date.<br><a href="/perl/chess.pl?tid=98742">Tournament Page</a> - <a href="https://en.candidates-2020.com/">Official&nbsp;Site</a><br></font>
+        &nbsp;<br> -->
+
+        <!--endnewgames-->
+        <!-- style="border: 1px solid #996633; text-align:center; padding: 2px; width:174px; margin:auto; background-image: url('./chessimages/header_stripes.gif'); background-repat:repeat-x;" -->
+
+        <!-- HAPPY Birthday TO SSM -->
+        <article id="cg-birthdays" class="cg-article text-center pb-1 border border-dark my-1">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">Happy Birthday To:</h2>
+          </header>
+          <!-- SUGGEST TURNING TO A LIST SSM -->
+          <p class="m-0">
+            <a class="text-decoration-none" href="/perl/chessplayer?pid=19575">Hermann G Voigt</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=163967">James Rayner</a>, <a class="text-decoration-none"
+              href="/perl/chessplayer?pid=148577">Nikolaus Doery von Jobahaza</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=47973">Leonard
+              Illingworth</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=123002">Alberto Fidi</a>,
+            <a class="text-decoration-none" href="/perl/chessplayer?pid=94009">Ernst Bachl</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=13654">Werner-Eberhard Kunerth</a>, <a class="text-decoration-none"
+              href="/perl/chessplayer?pid=147121">Hugh Courtney</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=85352">Zvonko Krzisnik</a>,
+            <a class="text-decoration-none" href="/perl/chessplayer?pid=93789">Jose Pinto Paiva</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=45628">H De Wilde</a>, <a class="text-decoration-none"
+              href="/perl/chessplayer?pid=79405">Par
+              Hammargren</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=102096">Mel Goetting</a>,
+            <a class="text-decoration-none" href="/perl/chessplayer?pid=42522">Ashot Gamletovich Anastasian</a>, <a class="text-decoration-none" href="/perl/chessplayer?pid=21992">Guenther Beikert</a>, and <a class="text-decoration-none"
+              href="/perl/chessplayer?pid=109944">Alexander Ipatov</a>!
+          </p>
+        </article>
+
+        <aside id="cg-chess-news" class="cg-article position-relative text-center pb-1 border border-dark my-1">
+          <!-- <section class="position-relative"> -->
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">Chess News</h2>
+          </header>
+          <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+          <div class="mobile-hide d-md-block">
+            <ul class="ps-2 p-0 m-0">
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://news.yahoo.com/does-chess-promote-white-privilege-123524747.html" target="news">
+                    Why does white always goes first in chess?
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://finance.yahoo.com/news/acclaimed-chess-program-wont-reopen-193700229.html" target="news">
+                    Acclaimed chess program won't reopen its doors for kids
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://timesofindia.indiatimes.com/most-searched-products/sports-equipment/finest-full-size-chess-boards-for-amateur-and-professional-players/articleshow/76982476.cms" target="news">
+                    Finest full-size chess boards for amateur and professional players
+                  </a>
+                </cite> (India Times)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://scroll.in/field/967612/women-speed-chess-cships-indias-koneru-humpy-d-harika-advance-to-quarter-finals-of-fourth-leg" target="news">
+                    Women Speed Chess C'ships: India's Koneru Humpy, D Harika advance to quarter-finals of fourth leg
+                  </a>
+                </cite> (scroll.in)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://news.yahoo.com/does-chess-promote-white-privilege-123524747.html" target="news">
+                    Why does white always goes first in chess?
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://finance.yahoo.com/news/acclaimed-chess-program-wont-reopen-193700229.html" target="news">
+                    Acclaimed chess program won't reopen its doors for kids
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://timesofindia.indiatimes.com/most-searched-products/sports-equipment/finest-full-size-chess-boards-for-amateur-and-professional-players/articleshow/76982476.cms" target="news">
+                    Finest full-size chess boards for amateur and professional players
+                  </a>
+                </cite> (India Times)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://scroll.in/field/967612/women-speed-chess-cships-indias-koneru-humpy-d-harika-advance-to-quarter-finals-of-fourth-leg" target="news">
+                    Women Speed Chess C'ships: India's Koneru Humpy, D Harika advance to quarter-finals of fourth leg
+                  </a>
+                </cite> (scroll.in)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://news.yahoo.com/does-chess-promote-white-privilege-123524747.html" target="news">
+                    Why does white always goes first in chess?
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://finance.yahoo.com/news/acclaimed-chess-program-wont-reopen-193700229.html" target="news">
+                    Acclaimed chess program won't reopen its doors for kids
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://timesofindia.indiatimes.com/most-searched-products/sports-equipment/finest-full-size-chess-boards-for-amateur-and-professional-players/articleshow/76982476.cms" target="news">
+                    Finest full-size chess boards for amateur and professional players
+                  </a>
+                </cite> (India Times)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://scroll.in/field/967612/women-speed-chess-cships-indias-koneru-humpy-d-harika-advance-to-quarter-finals-of-fourth-leg" target="news">
+                    Women Speed Chess C'ships: India's Koneru Humpy, D Harika advance to quarter-finals of fourth leg
+                  </a>
+                </cite> (scroll.in)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://news.yahoo.com/does-chess-promote-white-privilege-123524747.html" target="news">
+                    Why does white always goes first in chess?
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://finance.yahoo.com/news/acclaimed-chess-program-wont-reopen-193700229.html" target="news">
+                    Acclaimed chess program won't reopen its doors for kids
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://timesofindia.indiatimes.com/most-searched-products/sports-equipment/finest-full-size-chess-boards-for-amateur-and-professional-players/articleshow/76982476.cms" target="news">
+                    Finest full-size chess boards for amateur and professional players
+                  </a>
+                </cite> (India Times)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://scroll.in/field/967612/women-speed-chess-cships-indias-koneru-humpy-d-harika-advance-to-quarter-finals-of-fourth-leg" target="news">
+                    Women Speed Chess C'ships: India's Koneru Humpy, D Harika advance to quarter-finals of fourth leg
+                  </a>
+                </cite> (scroll.in)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://news.yahoo.com/does-chess-promote-white-privilege-123524747.html" target="news">
+                    Why does white always goes first in chess?
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://finance.yahoo.com/news/acclaimed-chess-program-wont-reopen-193700229.html" target="news">
+                    Acclaimed chess program won't reopen its doors for kids
+                  </a>
+                </cite> (Yahoo!)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://timesofindia.indiatimes.com/most-searched-products/sports-equipment/finest-full-size-chess-boards-for-amateur-and-professional-players/articleshow/76982476.cms" target="news">
+                    Finest full-size chess boards for amateur and professional players
+                  </a>
+                </cite> (India Times)
+              </li>
+              <li class="m-0 text-start">
+                <cite>
+                  <a class="text-decoration-none" href="https://scroll.in/field/967612/women-speed-chess-cships-indias-koneru-humpy-d-harika-advance-to-quarter-finals-of-fourth-leg" target="news">
+                    Women Speed Chess C'ships: India's Koneru Humpy, D Harika advance to quarter-finals of fourth leg
+                  </a>
+                </cite> (scroll.in)
+              </li>
+            </ul>
+          </div>
+          <!-- </section> -->
+        </aside>
+        <!-- end of cg=chess-news -->
+      </div>
+      <!-- END OF LEFT COLUMN SSM -->
+
+
+
+
+      <!-- <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://rappler.com/sports/antonio-surges-ahead-asian-chess-seniors" target="news">Antonio surges ahead in Asian Chess Seniors</a> (rappler.com)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.finanznachrichten.de/nachrichten-2020-07/50177822-rtg-mining-inc-announces-issue-of-us-dollar-3-8-million-chess-depository-instruments-under-tranche-2-of-placement-200.htm" target="news">RTG Mining Inc. Announces Issue of US$3.8 Million Chess Depository Instruments Under Tranche 2 of Placement</a> (finanznachrichten.de)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.sify.com/sports/chess-being-overlooked-for-national-sports-awards-a-worry-among-players-news-others-uhojPgdbegedi.html" target="news">Chess being overlooked for national sports awards a worry among players</a> (sify.com)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="http://www.xinhuanet.com/english/2020-07/14/c_139212179.htm" target="news">China's men's team footballers should learn to play chess, says go-chess master</a> (Xinhua News)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.reuters.com/article/us-health-coronavirus-safrica-wine-idUSKCN24F0XS" target="news">South Africa's Distell plays chess to beat lockdown wine glut</a> (Reuters)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://scroll.in/field/967376/chess-grandmaster-vidit-gujrathi-to-lead-india-in-online-chess-olympiad" target="news">Chess: Grandmaster Vidit Gujrathi to lead India in Online Chess Olympiad</a> (scroll.in)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.rappler.com/sports/by-sport/other-sports/266325-paragua-barcenilla-pace-chess-olympiad-qualifier" target="news">Paragua, Barcenilla pace Chess Olympiad qualifier</a> (rappler.com)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://scroll.in/field/967187/chess-grandmaster-rb-ramesh-former-chief-selector-of-aicf-laments-lack-of-recognition-from-govt" target="news">Chess: Grandmaster RB Ramesh, former chief selector of AICF, laments lack of recognition from govt</a> (scroll.in)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://allafrica.com/stories/202007100430.html" target="news">Rwanda: Chess - Rwanda Readies for Online Olympiad</a> (All Africa)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.rappler.com/sports/by-sport/other-sports/266147-gomez-gives-up-olympic-chess-qualifier-spot-to-antonio" target="news">Gomez gives up Olympic chess qualifier spot to Antonio</a> (rappler.com)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFFFDD">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://www.sify.com/sports/aicf-faction-fight-affecting-players-chess-players-forum-news-others-uhiklteeabjgc.html" target="news">AICF faction fight affecting players: Chess Players Forum</a> (sify.com)</font></font></td>
+        </tr>
+
+        <tr bgcolor="#FFDDAA">
+        <td align="right" valign="top"><font face="verdana,arial,helvetica" size="-2"><b><font color="#CC9966">&#8226;</font></b></font></td>
+        <td valign="top" align="left"><font face="verdana,arial,helvetica" size="-2"><a href="https://scroll.in/field/966905/all-india-chess-federation-secretary-chauhan-slams-raja-faction-after-chief-selector-resigns" target="news">All India Chess Federation secretary Chauhan slams Raja faction after chief selector resigns</a> (scroll.in)</font></font></td>
+        </tr>
+        </table> -->
+      <!--endnews-->
+      <!-- </td></tr></table></td></tr></table> -->
+      <div id="cg-right-column" class="col-12 col-sm-6 col-md-3 col-xl-2 order-md-3">
+        <div id="cg-update" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+
+          </div>
+          <a class="text-decoration-none" href="/perl/tour">
+            <img class="position-relative" src="./chessimages/promote_your_account.gif" width="190" height="135" alt="Upgrade Your Account for Full Access!">
+          </a>
+        </div>
+
+        <section id="cg-welcome" class="cg-article d-none d-sm-block text-center pb-1 border border-dark my-1 position-relative order-md-0">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">Welcome, test1234!</h2>
+          </header>
+          <div>
+            <a class="text-decoration-none" href="/perl/chessprofile.pl">Preferences</a> |
+            <a class="text-decoration-none" href="/perl/chesslogout.pl">Logout</a><br>
+            <a class="text-decoration-none" href="https://secure.chessgames.com/perl/chessgames_membership.pl?username=test1234" onClick="pageTracker._link(this.href); return false;">
+              Upgrade to Premium
+            </a>
+          </div>
+        </section>
+
+        <div id="cg-analysis" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+          </div>
+          <a class="text-decoration-none" href="/perl/analyzer.pl">
+            <img class="position-relative" src="./chessimages/analysislabbanner.png" width="190" height="115" alt="The most powerful chess engine in the world, on demand!">
+          </a>
+        </div>
+        <div id="cg-bookie" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+
+          </div>
+          <a class="text-decoration-none" href="/bookie.html">
+            <img class="position-relative" src="./chessimages/bookiead2.gif" width=190 height=135 alt="The ChessBookie Game!">
+          </a>
+        </div>
+
+        <section id="cg-recent-kibitzing" class="cg-article d-flex flex-wrap text-center pb-1 border border-dark my-1 position-relative">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">
+              <a class="header-link text-dark" href="/perl/chessnew">
+                Recent Kibitzing
+              </a>
+            </h2>
+          </header>
+          <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+          <!-- d-flex justify-content-center text-center m-auto -->
+          <div class="mobile-hide d-md-block">
+            <ul class="p-0">
+              <!-- ALTERNATES BETWEEN #FFFFDD && #FFDDAA SSM-->
+              <li class="m-0" id="k0" title="egilarne: The accuracy of the Chessgames.com database means very little according to my experience: I have several times tried to get them to correct ...">
+                <a class="text-decoration-none text-center" href="/perl/chessgame?gid=1530711">Eigil Pedersen vs G F Kane,&nbsp;1972</a>
+              </li>
+              <li class="m-0" title="egilarne: The accuracy of the Chessgames.com database means very little according to my experience: I have several times tried to get them to correct ...">
+                <a class="text-decoration-none text-center" href="/perl/chessgame?gid=1530711">Eigil Pedersen vs G F Kane,&nbsp;1972</a>
+              </li>
+              <li class="m-0" title="Viking707: Rossolimo might not be among the greatest GMs of all time, but when he was inspired, his games are a thing of beauty.">
+                <a class="text-decoration-none text-center" href="/perl/chessgame?gid=1259461">Rossolimo vs I Romanenko,&nbsp;1948</a>
+              </li>
+              <li class="m-0" title="lentil: Sportsmanlike to permit the mate!">
+                <a class="text-decoration-none text-center" href="/perl/chessgame?gid=1459237">Yanofsky vs Reshevsky,&nbsp;1957</a>
+              </li>
+              <li class="m-0" title="Predrag3141: 10 ... Qb4 started the real slide, but 7 ... Qe7+ looked pretty awful to me as well, so I checked its record in chessgames.com.On 7 ... ...">
+                <a class="text-decoration-none text-center p-2" href="/perl/chessgame?gid=1411113">M Bonch-Osmolovsky vs B Baranov,&nbsp;1953</a>
+              </li>
+            </ul>
+
+            <div class="more-events-div w-75 my-1 mx-auto p-1">
+              <a class="text-decoration-none text-center" href="#" class="more-events-link">more kibitzing...</a>
+            </div>
+
+            <section id="cg-recent-visitors" class="position-relative">
+              <h3>Recent Visitors:</h3>
+              <p class="m-0">
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=nevski">nevski</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=aquilotto1968">aquilotto1968</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=Ulhumbrus">Ulhumbrus</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=Olsonist">Olsonist</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=awfulhangover">awfulhangover</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=Czx">Czx</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=ultrattacker">ultrattacker</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=geezerbloke">geezerbloke</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=OhioChessFan">OhioChessFan</a>,
+                <a class="text-decoration-none text-dark text-decoration-underline" href="/perl/chessuser?uname=bolzanobrentano">bolzanobrentano</a>
+              </p>
+              <footer class="mt-1">108 registered members online, plus 402 anonymous users.</footer>
+            </section>
+            <!-- end of #cg-recent-visitors -->
+          </div>
+        </section>
+        <!-- end of #recent-kibitzing -->
+
+        <div id="cg-tournement-index" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+
+          </div>
+          <a class="text-decoration-none" href="/perl/tournaments"><img class="position-relative" src="./chessimages/tournamentindexbanner.gif" width="190" height="135" alt="Chess Tournament Index"></a>
+        </div>
+
+        <div id="cg-goat" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+
+          </div>
+          <a class="text-decoration-none" href="/perl/goat.pl"><img class="position-relative" src="./chessimages/goatbanner.gif" width="190" height="124" alt="The Most Notable Chess Games in History"></a>
+        </div>
+
+        <div id="cg-store" class="image-section my-1 border border-dark text-center position-relative py-2">
+          <div class="mb-1 w-100 position-absolute top-0">
+
+          </div>
+          <a class="text-decoration-none" href="https://store.chessgames.com/"><img class="position-relative" src="./chessimages/store_banner2.gif" width=190 height=124 alt="Chess Products at Slashed Prices!"></a>
+        </div>
+
+        <section id="cg-qotd" class="cg-article text-center pb-1 border border-dark my-1 position-relative">
+          <div>
+            <header class="mb-1 m-0 w-100">
+              <h2 class="m-0 p-1 fw-bold">Quote of the Day</h2>
+            </header>
+            <img id="qotd-design" src="./chessimages/flourish.gif" alt="Design under header for visual purpose">
+          </div>
+          <blockquote class="m-2 text-start">
+            <!-- <font face="palatino,times" size=-1> -->
+            <img src="./chessimages/quote_open.gif" height=21 width=21 alt="Opening Quototion">
+            I have seen two geniuses in my time. One was Tal. The other was Fischer.
+            <img src="./chessimages/quote_closed.gif" height=21 width=21 alt="Closing Quotation">
+            <footer class="text-end m-1">&mdash; Averbakh</footer>
+          </blockquote>
+          <!-- face="palatino,times" -->
+        </section>
+        <!-- <img src="/spacer.gif" width="4" height="4"><br> -->
+
+
+        <!-- <div id="cg-middle-left" class="border-end border-dark pe-1">
+                  <section class="position-relative">
+                    <h2 class="fw-bold m-2 p-2">NEW USERS: Getting Started</h2>
+                    <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+                    <div class="mobile-hide d-md-block">
+                      <p>
+                        Founded on an extensive database of historical chess games combined with discussion forums,
+                        <strong>Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to participate.</strong>
+                        From novices to grandmasters, <em>all</em> members can learn from those who are stronger players, while guiding those who are less experienced.
+                      </p> -->
+
+        <section id="cg-special-features" class="cg-article text-center pb-1 border border-dark my-1 position-relative">
+          <header class="mb-1 w-100">
+            <h2 class="m-0 p-1 fw-bold">Special Features</h2>
+          </header>
+          <button type="button" class="cg-toggle d-md-none border rounded-circle position-absolute"><i class="fa fa-angle-double-down"></i></button>
+          <div class="mobile-hide d-md-block">
+            <ul class="ps-2 p-0">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/chessnew">Recent Kibitzing</a> page shows you
+                who's talking about what.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/explorer">Opening Explorer</a> is the perfect
+                way to study complicated openings, move by move.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/chessforum.pl">Kibitzer's Cafe</a> offers
+                chess discussion and camaraderie.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/bistro.pl">Biographer's Bistro</a> serves up
+                chess history 24 hours a day!
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/tournaments">Tournament Index</a> is a
+                chronological catalog of major chess tournaments from the 1800s to present day.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Our <a class="text-decoration-none" href="/wcc.html">History of the World Chess Championship</a>
+                is a guide to the most coveted title in chess.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/bookie.html">ChessBookie</a> game lets you
+                wager play-money on real world chess events, and win cool prizes.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/directory/">Players' Directory</a> indexes
+                thousands of eminent chessplayers.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                The <a class="text-decoration-none" href="/perl/tour">Chessgames Tour</a> is a slideshow
+                demonstrating the many features available to Chessgames Premium
+                Members for only pennies a day.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                <a class="text-decoration-none" href="/perl/gamesoftheday">Game of the Day Archive</a> stores
+                the last year of featured games. (Have an idea for
+                Game of the Day? See our <a class="text-decoration-none" href="/perl/submitpun">Pun Submission Page</a>!)
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                See a <a class="text-decoration-none" href="/perl/chessrandom">Random&nbsp;Game</a>.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Our <a class="text-decoration-none" href="/perl/chessgift">Chess Gift Page</a> allows you to
+                give the gift of chess, by purchasing an account for another
+                Chessgames member.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                <a class="text-decoration-none" href="/perl/fischerandom">Fischerandom (Chess960)</a> generator.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Run your own chess site? See our <a class="text-decoration-none" href="/webmasters.html">Webmaster
+                  Resources</a>.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Our page of <a class="text-decoration-none" href="/chessstats.html">Database Statistics</a> is filled with
+                many fun facts.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Browse other users' favorite games on our <a class="text-decoration-none" href="/perl/collections">Game Collections Page</a>.
+              </li>
+              <li class="m-0 text-start"><img class="d-flex justify-content-center" width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+              <li class="m-0 text-start">
+              <li class="m-0 text-start">
+                Do you have an important chess game that we are missing? See our <a class="text-decoration-none" href="/perl/chessupload">PGN Upload Utility</a>.
+            </ul>
+          </div>
+
+        </section>
+        <!-- end of special-features -->
+      </div>
+      <!-- end of #cg-right-column -->
+    </div>
+    <!-- end of .three-columns -->
+  </div>
+  <!-- end of #core -->
+
+
+
+  <!-- FOOTER SSM -->
+  <footer id="cg-footer" class="text-center">
+    <ul class="d-flex flex-wrap border border-dark justify-content-center p-1 ">
+      <li class="mx-1"><a class="text-decoration-none" href="/index.html">Home</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/chessabout.html">About</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chesslogin.pl">Login</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chesslogout.pl">Logout</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/chesshelp.html">F.A.Q.</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessuser">Profile</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessprofile.pl">Preferences</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessmembers">Premium&nbsp;Membership</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessforum.pl">Kibitzer's&nbsp;Caf&eacute;</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/bistro.pl">Biographer's&nbsp;Bistro</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessnew">New&nbsp;Kibitzing</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/chessnew?chessforums=1">Chessforums</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/tournaments">Tournament Index</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/directory/">Player&nbsp;Directory</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/goat.pl">Notable&nbsp;Games</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/wcc.html">World&nbsp;Chess&nbsp;Championships</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/explorer">Opening&nbsp;Explorer</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/guessthemove">Guess&nbsp;the&nbsp;Move</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/collections">Game&nbsp;Collections</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/bookie.html">ChessBookie&nbsp;Game</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/perl/challenge">Chessgames Challenge</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="https://store.chessgames.com">Store</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="/chessprivacy.html">Privacy&nbsp;Notice</a> <span class="mx-1">|</span> </li>
+      <li class="mx-1"><a class="text-decoration-none" href="mailto:chess@chessgames.com">Contact&nbsp;Us</a></li>
+    </ul>
+    <!-- class="cgc-ns1 center tcenter xxsm tbm0" -->
+    <p>Copyright 2001-2020, Chessgames Services LLC<br>
+      Web design &amp; database development by 20/20 Technologies</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+#cg-puzzleotd {
+  background-image: url('../chessimages/board2.jpg')
+}
+
+#header-logo img {
+  z-index: 10;
+}
+
+#header-link-buttons {
+  display: none;
+}
+
+.deactive-desktop-button {
+  background-color: #6FA1FF;
+}
+
+header nav {
+  background-color: #FFFFEE;
+  z-index: 100;
+}
+
+header nav ul li:first-of-type {
+  list-style: none;
+}
+
+header nav ul li {
+  list-style: disc;
+  font-size: 12px;
+  list-style-position: outside;
+}
