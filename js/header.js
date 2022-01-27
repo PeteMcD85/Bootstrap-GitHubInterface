@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(async function() {
 
   var viewport = $('meta[name="viewport"]'),
     windowWidth = $(window).width(),
@@ -62,11 +62,65 @@ $(document).ready(function() {
   // end of desktopLayoutToggle()
 
 
+
+
+
+
+
+  // var issue = {
+  //     // "title": title,
+  //     // "body": bodytext
+  // },
+  var repoUrl = 'https://api.github.com/repos/PeteMcD85/GitHubInterface',
+    $items = $('#firstName, #lastName,#phoneNumber,#address '),
+    obj = {};
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//   $items.each(function() {
+//     obj[this.id] = $(this).val();
+//   })
+//
+//   var json = JSON.stringify(obj);
+//   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  console.log('repoUrl');
+  console.log(repoUrl);
+  // console.log('issue');
+  // console.log(issue);
+
+  function createIssue(data) {
+    return $.ajax({
+      type: "POST",
+      url: "/repos/PeteMcD85/GitHubInterface/GitHubInterface"
+      // contentType: "application/json",
+      // dataType: "json",
+      // data: JSON.stringify(data)
+    }).done(console.log(data);)
+  }
+// ++++++++++++++
+  // function createComment(issueNumber, data) {
+  //   return $.ajax({
+  //     type: "POST",
+  //     url: "/repos/PeteMcD85/GitHubInterface/issues" + issueNumber + "/comments",
+  //     contentType: "application/json",
+  //     dataType: "json",
+  //     data: JSON.stringify(data)
+  //   });
+  // }
+  //
+  // createIssue(issue).then(function(issueNumber) {
+  //   return createComment(
+  //     issueNumber, {
+  //       // comment details
+  //     }
+  //   );
+  // }).done(function() {
+  //   // callback on successful issue & comment creation
+  // });
+
+
+
 });
 // end of docReady
-
-
-// $("#desktopVersion").click(function() {
-//   console.log(this);
-//   $(this).toggleClass("disabled")
-// })
