@@ -45,18 +45,32 @@
       <img src="chessimages/mobile_header.gif" class="img-fluid vw-100 d-sm-none" alt="mobile-header">
     </div>
 
-    <div class="desktop-mobile-view d-flex justify-content-around d-sm-none">
-      <button id="desktopVersion" name="button" class="btn btn-outline-primary btn-primary m-1" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Desktop View"><i
-          class="desktop-icon text-light bi bi-layout-three-columns"></i></button>
-    </div>
+    <div id="desktop-view-issue-button" class="d-flex flex-column">
+      <div class="desktop-mobile-view d-flex justify-content-around d-sm-none">
+        <button id="desktopVersion" name="button" class="btn btn-outline-primary btn-primary m-1" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Desktop View"> <i
+            class="desktop-icon text-light bi bi-layout-three-columns"></i></button>
 
-    <div id="statistics">
-      <h3 id="heading"></h3>
-      <ul id="stats"></ul>
-      <h4>Contributors</h4>
-      <hr>
-      <ol id="contributors"></ol>
+
+        <!-- <div id="issue-button-textarea" class="d-flex flex-column"> -->
+        <button id="issueButton" name="button" class="create-issue btn btn-primary m-1" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Create-Issue">Create Issue</button>
+      </div>
+      <div id="cg-issue-text-area" class="issue-textarea d-none d-flex flex-column justify-content-center row">
+        <!-- <label class="issue-textarea col-8"></label> -->
+        <div class="d-flex flex-column">
+          <textarea class="issue-textarea col-8 my-2 d-flex mx-auto" name="issue-textarea" placeholder="Create Issue here"></textarea>
+          <button type="submit" name="button" class="submit-cancel mb-2 mt-1 d-flex flex-nowrap mx-auto">Submit Issue</button>
+        </div>
+
+
+      </div>
+      <!-- #cg-issue-text-area -->
+      <!-- </div> -->
+      <!-- #issue-button-textarea -->
     </div>
+    <!-- #desktop-view-issue-button -->
+
+
+
 
 
     <nav id="header-nav" class="border border-dark w-100 position-relative mx-1">
