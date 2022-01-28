@@ -1,17 +1,14 @@
 $(document).ready(async function() {
-
+  // variables
   var viewport = $('meta[name="viewport"]'),
     windowWidth = $(window).width(),
     viewportContent = viewport.attr("content"),
     welcomeContent = $("#cg-welcome").html(),
     issueButtonText = $("#issueButton").text();
-  console.log($("#issueButton").text());
-  console.log(issueButtonText);
 
   // On Click Event Listeners
   $("#desktopVersion").click(desktopLayoutToggle);
-  $("#issueButton").click(toggleIssueTextArea);
-
+  $("#issueButton").click(toggleCreateOrCancelButtons);
 
   // appending html content into another div for mobile version
   $(welcomeContent).appendTo($("#cg-welcome-mobile"));
@@ -26,7 +23,6 @@ $(document).ready(async function() {
 
 
   // ** click() FUNCTIONS **
-
   $(".cg-toggle").click(function() {
     $(this)
       .next()
@@ -37,40 +33,6 @@ $(document).ready(async function() {
   });
 
   // ** functions() FUNCTIONS **
-
-  function checkingViewportContent() {
-    return viewportContent == "width = 1060px, maximum - scale = 1.0, User-scalable=yes" ? "yes" : "no";
-  }
-  // end of checkingViewportContent()
-
-  function IssueButtonTextSubmit() {
-    console.log($("#issueButton").text() == "Create Issue" ? "no" : "yes");
-    console.log(issueButtonText == "Create Issue" ? "no" : "yes");
-    console.log('3');
-    console.log(issueButtonText);
-    console.log('3b');
-    console.log($("#issueButton").text());
-    return $("#issueButton").text() == "Create Issue" ? "no" : "yes";
-  }
-  // end ofissueButtonTextSubmit()
-
-  function toggleIssueTextArea() {
-    if (IssueButtonTextSubmit() == "no") {
-      $(".issue-textarea").removeClass("d-none");
-      $("#issueButton").text("Cancel Issue");
-
-      console.log('4');
-      console.log(issueButtonText);
-      console.log('4b');
-      console.log($("#issueButton").text());
-
-    } else if ($("#issueButton").text() == "yes") {
-      $(".issue-textarea").addClass("d-none");
-      $("#issueButton").text("Submit Issue");
-    }
-  }
-  // end of toggleIssueTextArea()
-
   function desktopLayoutToggle() {
     if (checkingViewportContent() == "no") {
       viewport.attr("content", "width = 1060px, maximum - scale = 1.0, User-scalable=yes");
@@ -87,10 +49,26 @@ $(document).ready(async function() {
   }
   // end of desktopLayoutToggle()
 
+  function checkingViewportContent() {
+    return viewportContent == "width = 1060px, maximum - scale = 1.0, User-scalable=yes" ? "yes" : "no";
+  }
+  // end of checkingViewportContent()
 
+  function IssueButtonCreateOrCancel() {
+    return $("#issueButton").text() == "Create Issue" ? "no" : "yes";
+  }
+  // end ofIssueButtonCreateOrCancel()
 
-
-
+  function toggleCreateOrCancelButtons() {
+    if (IssueButtonCreateOrCancel() == "no") {
+      $(".issue-textarea").removeClass("d-none");
+      $("#issueButton").text("Cancel Issue");
+    } else if ($("#issueButton").text() == "Cancel Issue") {
+      $(".issue-textarea").addClass("d-none");
+      $("#issueButton").text("Create Issue");
+    }
+  }
+  // end of toggleCreateOrCancelButtons()
 
   // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   // <div id="created-issue">
