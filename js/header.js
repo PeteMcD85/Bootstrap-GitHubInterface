@@ -5,7 +5,7 @@ $(document).ready(async function() {
     viewportContent = viewport.attr("content"),
     welcomeContent = $("#cg-welcome").html(),
     issueButtonText = $("#issueButton").text();
-  console.log('issueButtonText');
+  console.log($("#issueButton").text());
   console.log(issueButtonText);
 
   // On Click Event Listeners
@@ -36,14 +36,6 @@ $(document).ready(async function() {
       .toggleClass("fa-angle-double-down fa-angle-double-up");
   });
 
-  // $("#issueButton").click(function() {
-  // changing text of issue button when clicked
-  //   $(".issue-textarea").removeClass("d-none");
-  //   $("#issueButton").text("Cancel Issue");
-  // });
-  //end of issuebutton click()
-
-
   // ** functions() FUNCTIONS **
 
   function checkingViewportContent() {
@@ -53,24 +45,26 @@ $(document).ready(async function() {
 
   function IssueButtonTextSubmit() {
     console.log($("#issueButton").text() == "Create Issue" ? "no" : "yes");
+    console.log(issueButtonText == "Create Issue" ? "no" : "yes");
     console.log('3');
     console.log(issueButtonText);
+    console.log('3b');
     console.log($("#issueButton").text());
-    return issueButtonText == "Create Issue" ? "no" : "yes";
+    return $("#issueButton").text() == "Create Issue" ? "no" : "yes";
   }
-  // end of IssueButtonTextSubmit()
+  // end ofissueButtonTextSubmit()
 
   function toggleIssueTextArea() {
     if (IssueButtonTextSubmit() == "no") {
-      console.log('4');
-      console.log(issueButtonText);
-      console.log($("#issueButton").text());
       $(".issue-textarea").removeClass("d-none");
       $("#issueButton").text("Cancel Issue");
-    } else if (IssueButtonTextSubmit() == "yes") {
-      console.log("5");
+
+      console.log('4');
       console.log(issueButtonText);
+      console.log('4b');
       console.log($("#issueButton").text());
+
+    } else if ($("#issueButton").text() == "yes") {
       $(".issue-textarea").addClass("d-none");
       $("#issueButton").text("Submit Issue");
     }
