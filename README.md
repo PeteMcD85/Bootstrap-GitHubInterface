@@ -23,6 +23,13 @@
   <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
 </div>
 
+---
+
+### man_technologist: About Me :
+
+
+
+
 Description
 
 Welcome fellow developers, in this repo I created a button so that you can create Issues to your Github repo through your UI. This is done when you
