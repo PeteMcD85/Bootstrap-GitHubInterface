@@ -4,6 +4,8 @@
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 </div>
 
+https://img.shields.io/badge/LinkedIn-blue
+
 Description
 
 Welcome fellow developers, in this repo I created a button so that you can create Issues to your Github repo through your UI. This is done when you
