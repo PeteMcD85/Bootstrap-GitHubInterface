@@ -10,8 +10,9 @@
   </a>
 </div>
 
-https://komarev.com/ghpvc/?username=PeteMcD85
-<img src="https://komarev.com/ghpvc/?username=PeteMcD85&style=flat-square&color=blue" alt="views counter"/>
+<div id="counter" align="center">
+  <img src="https://komarev.com/ghpvc/?username=PeteMcD85&style=flat-square&color=blue" alt="views counter"/>
+</div>
 
 Description
 
