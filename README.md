@@ -1,16 +1,16 @@
-<div id="header" align="center" style="margin: 20px">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+<div id="header" align="center">
+  <img style="margin: 20px" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 </div>
 
 
-<div id="badges" align="center" style="margin: 20px">
+<div id="badges" align="center">
   <a href="https://www.linkedin.com/in/petermcdonald85/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    <img style="margin: 20px" src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
 
-<div id="counter" align="center" style="margin: 20px">
-  <img src="https://komarev.com/ghpvc/?username=PeteMcD85&style=flat-square&color=blue" alt="views counter"/>
+<div id="counter" align="center">
+  <img style="margin: 20px" src="https://komarev.com/ghpvc/?username=PeteMcD85&style=flat-square&color=blue" alt="views counter"/>
 </div>
 
 <!-- <h1 align="center">
@@ -19,7 +19,7 @@
 </h1> -->
 
 <div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="400" height="150"/>
+  <img style="margin: 20px" src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="400" height="150"/>
 </div>
 
 ---
