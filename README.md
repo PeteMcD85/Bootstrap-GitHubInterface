@@ -20,12 +20,23 @@
 </h1> -->
 
 <div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
+  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="400" height="150"/>
 </div>
 
 ---
 
-### man_technologist: About Me :
+### 👨‍💻 About Me :
+
+I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Miami, FL
+
+- :seedling: Exploring Technical Content Writing.
+
+- :zap: In my free time, I solve problems on Chessgames.com and read tech articles.
+
+- :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/petermcdonald85/)
+
+<!-- - :telescope: I’m working as a Software Engineer and contributing to frontend and backend for building web applications. -->
+
 
 
 
